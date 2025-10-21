@@ -1,0 +1,109 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Pyenv
+.python-version
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# SageMath output files
+*.sage.py
+
+# Spyder project files
+.spyderproject
+.spyproject
+
+# Rope project files
+.ropeproject
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Django specific (if applicable)
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask specific (if applicable)
+instance/
+.webassets-cache
+
+# Scrapy specific (if applicable)
+.scrapy
