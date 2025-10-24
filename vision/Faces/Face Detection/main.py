@@ -2,8 +2,7 @@
 
 # input image - any image/live video
 # detection of face
-# create bouding box/circle
-# Blur the inner part 
+# create bouding box
 # output
 
 # packages : opencv, mediapipe
@@ -30,8 +29,17 @@ if img is not None :
         out = face_detector.process(image_rgb)
 
         for detection in out.detections:
-            print(detection)
+            locations = detection.location_data
+            bbox = locations.relative_bounding_box
+            x1 = int(bbox.xmin*W)
+            y1 = int(bbox.ymin*H)
+            x2 = int(bbox.width*W) + x1
+            y2 = int(bbox.height*H) + y1
 
+            print((x1, y1),(x2, y2))
+
+            img = cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 3)
+            
     cv2.imshow('Image Window', img)
     cv2.waitKey(0) # Waits indefinitely for a key press
     cv2.destroyAllWindows()
